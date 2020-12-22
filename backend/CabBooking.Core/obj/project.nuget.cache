@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "84tTIFwA0xdgSXVL6SWuoke5AtbC8GMd0CwtXW7NXcKM95m0wfgyk1LEcyUtQSnDLAoo/TjUa6F9Sp5z2l7O0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Akagi\\Desktop\\eva\\backend\\CabBooking.Core\\CabBooking.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Akagi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

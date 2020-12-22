@@ -1,0 +1,36 @@
+<p>car details</p>
+<div class="container-fluid">
+
+    <div class="row">
+  
+      <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let carbooking of carBookings" >
+
+
+        <div class="card mb-4 shadow bg-light">
+
+            <a [routerLink]="[ 'Cars/', carbooking.id ]">
+          
+              <img class="card-img-top" src="https://www.motortrend.com/uploads/sites/5/2020/09/2021-toyota-camry-02.jpg?fit=around%7C875:492.1875" class="img-fluid" alt="{{carbooking.id}}"/>
+            </a>
+            <div class="card-body">
+                <h2 class="card-title">Booking Details</h2>
+              <h5>ID  {{carbooking.id}}</h5>
+              <p>Email  {{carbooking.email}}</p>
+              <p>pickupAddress  {{carbooking.pickupAddress}}</p>
+              <p>contactNo  {{carbooking.contactNo}}</p>
+              <h3>Place Infomation</h3>
+              <h5>From Place Name : {{carbooking.fromPlaceName}}</h5>
+              <h5>To Place Name : {{carbooking.toPlaceName}}</h5>
+
+            </div>
+          
+            
+
+          
+          </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>

@@ -1,0 +1,218 @@
+<p>booking works!</p>
+<div class="container-fluid">
+
+    <div class="row">
+  
+      <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let item of items" >
+
+
+         <div class="card mb-4 shadow bg-light">
+          
+            <div class="card-body">
+              <h5 class="card-title">Email: {{item.email}}</h5>
+              <h5>ID: {{item.id}}</h5>
+              <h5>PickupAddress: {{item.pickupAddress}}</h5>
+              <h5>VEHICLE ID: {{item.cabTypeId}}</h5>
+              <h5>ContactNo: {{item.contactNo}}</h5>
+              <h5>From Place ID: {{item.fromPlaceId}}</h5>
+              <h5>To Place ID: {{item.toPlaceId}}</h5>
+            </div>      
+          </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+
+  <div class="container">
+      <h2>Add New</h2>
+    <form  (ngSubmit) = 'addNew()' #addForm="ngForm">
+
+        <div class="form-group">
+          <label for="id">ID</label>
+          <input
+          name="id"[(ngModel)]="itemModel.id"
+            type="number"
+            class="form-control"
+            id="id"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <input type="text" class="form-control" id="email"  name="email" [(ngModel)]="itemModel.email"/>
+        </div>
+
+        <div class="form-group">
+          <label for="fromPlaceId">From Place Id</label>
+          <input
+          name="fromPlaceId" [(ngModel)]="itemModel.fromPlaceId"
+            type="number"
+            class="form-control"
+            id="fromPlaceId"
+          />
+        </div>
+
+        <div class="form-group">
+        <label for="toPlaceId">To Place Id</label>
+        <input
+        name="toPlaceId" [(ngModel)]="itemModel.toPlaceId"
+            type="number"
+            class="form-control"
+            id="toPlaceId"
+        />
+        </div>
+
+        <div class="form-group">
+          <label for="pickupAddress">Pickup Address</label>
+          <input type="text" class="form-control" id="pickupAddress"  name="pickupAddress" [(ngModel)]="itemModel.pickupAddress"/>
+        </div>
+
+        <div class="form-group">
+        <label for="cabTypeId">Cab Type Id</label>
+        <input
+        name="cabTypeId" [(ngModel)]="itemModel.cabTypeId"
+            type="number"
+            class="form-control"
+            id="cabTypeId"
+        />
+        </div>
+
+        <div class="form-group">
+          <label for="contactNo">Contact No</label>
+          <input type="text" class="form-control" id="contactNo"  name="contactNo" [(ngModel)]="itemModel.contactNo"/>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="submit"/>
+      </form>
+
+  </div>
+
+  <div class="container">
+    <h2>Delete One</h2>
+  <form  (ngSubmit) = 'deleteOne()' #addForm="ngForm">
+
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input
+        name="id"[(ngModel)]="itemModel.id"
+          type="number"
+          class="form-control"
+          id="id"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="text" class="form-control" id="email"  name="email" [(ngModel)]="itemModel.email"/>
+      </div>
+
+      <div class="form-group">
+        <label for="fromPlaceId">From Place Id</label>
+        <input
+        name="fromPlaceId" [(ngModel)]="itemModel.fromPlaceId"
+          type="number"
+          class="form-control"
+          id="fromPlaceId"
+        />
+      </div>
+
+      <div class="form-group">
+      <label for="toPlaceId">To Place Id</label>
+      <input
+      name="toPlaceId" [(ngModel)]="itemModel.toPlaceId"
+          type="number"
+          class="form-control"
+          id="toPlaceId"
+      />
+      </div>
+
+      <div class="form-group">
+        <label for="pickupAddress">Pickup Address</label>
+        <input type="text" class="form-control" id="pickupAddress"  name="pickupAddress" [(ngModel)]="itemModel.pickupAddress"/>
+      </div>
+
+      <div class="form-group">
+      <label for="cabTypeId">Cab Type Id</label>
+      <input
+      name="cabTypeId" [(ngModel)]="itemModel.cabTypeId"
+          type="number"
+          class="form-control"
+          id="cabTypeId"
+      />
+      </div>
+
+      <div class="form-group">
+        <label for="contactNo">Contact No</label>
+        <input type="text" class="form-control" id="contactNo"  name="contactNo" [(ngModel)]="itemModel.contactNo"/>
+      </div>
+
+      <input type="submit" class="btn btn-primary" value="submit"/>
+    </form>
+
+</div>
+
+<div class="container">
+    <h2>Update One</h2>
+  <form  (ngSubmit) = 'updateOne()' #addForm="ngForm">
+
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input
+        name="id"[(ngModel)]="itemModel.id"
+          type="number"
+          class="form-control"
+          id="id"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="text" class="form-control" id="email"  name="email" [(ngModel)]="itemModel.email"/>
+      </div>
+
+      <div class="form-group">
+        <label for="fromPlaceId">From Place Id</label>
+        <input
+        name="fromPlaceId" [(ngModel)]="itemModel.fromPlaceId"
+          type="number"
+          class="form-control"
+          id="fromPlaceId"
+        />
+      </div>
+
+      <div class="form-group">
+      <label for="toPlaceId">To Place Id</label>
+      <input
+      name="toPlaceId" [(ngModel)]="itemModel.toPlaceId"
+          type="number"
+          class="form-control"
+          id="toPlaceId"
+      />
+      </div>
+
+      <div class="form-group">
+        <label for="pickupAddress">Pickup Address</label>
+        <input type="text" class="form-control" id="pickupAddress"  name="pickupAddress" [(ngModel)]="itemModel.pickupAddress"/>
+      </div>
+
+      <div class="form-group">
+      <label for="cabTypeId">Cab Type Id</label>
+      <input
+      name="cabTypeId" [(ngModel)]="itemModel.cabTypeId"
+          type="number"
+          class="form-control"
+          id="cabTypeId"
+      />
+      </div>
+
+      <div class="form-group">
+        <label for="contactNo">Contact No</label>
+        <input type="text" class="form-control" id="contactNo"  name="contactNo" [(ngModel)]="itemModel.contactNo"/>
+      </div>
+
+      <input type="submit" class="btn btn-primary" value="submit"/>
+    </form>
+
+</div>

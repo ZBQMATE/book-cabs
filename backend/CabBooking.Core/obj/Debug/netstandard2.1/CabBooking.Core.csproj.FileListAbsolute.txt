@@ -1,0 +1,9 @@
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\bin\Debug\netstandard2.1\CabBooking.Core.deps.json
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\bin\Debug\netstandard2.1\CabBooking.Core.dll
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\bin\Debug\netstandard2.1\CabBooking.Core.pdb
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\obj\Debug\netstandard2.1\CabBooking.Core.csprojAssemblyReference.cache
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\obj\Debug\netstandard2.1\CabBooking.Core.AssemblyInfoInputs.cache
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\obj\Debug\netstandard2.1\CabBooking.Core.AssemblyInfo.cs
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\obj\Debug\netstandard2.1\CabBooking.Core.csproj.CoreCompileInputs.cache
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\obj\Debug\netstandard2.1\CabBooking.Core.dll
+C:\Users\Akagi\Desktop\eva\backend\CabBooking.Core\obj\Debug\netstandard2.1\CabBooking.Core.pdb

@@ -1,0 +1,28 @@
+<p>home works!</p>
+<div class="container-fluid">
+
+    <div class="row">
+  
+      <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let car of cars" >
+
+
+         <div class="card mb-4 shadow bg-light">
+
+            <a [routerLink]="[ 'Cars/', car.id ]">
+          
+              <img class="card-img-top" src="https://www.motortrend.com/uploads/sites/5/2020/09/2021-toyota-camry-02.jpg?fit=around%7C875:492.1875" class="img-fluid" alt="{{car.name}}"/>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">{{car.name}}</h5>
+            </div>
+          
+            
+
+          
+          </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
